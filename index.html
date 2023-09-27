@@ -1,45 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Assignment</title>
+    <title>Online Food Ordering</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        select, input[type="number"], input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Online Food Ordering</h1>
+        <form action="#" method="post">
+            <label for="food-item">Select Food Item:</label>
+            <select id="food-item" name="food-item">
+                <option value="pizza">Pizza</option>
+                <option value="burger">Burger</option>
+                <option value="sushi">Sushi</option>
+                <option value="pasta">Pasta</option>
+            </select>
 
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
 
-    <h1 style="text-align: center;">TAMBULI SEA KUBO</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-    <main>
-        <section>
-            <h2></h2>
-            <p>ORDER NOW!!</p>
-        </section>
+            <label for="delivery-address">Delivery Address:</label>
+            <input type="text" id="delivery-address" name="delivery-address" placeholder="Enter your address">
 
-        <section>
-           
-            <ul>
-                <li>TABLE 1</li>
-                <li>TABLE 2</li>
-                <li>TABLE 3</li>
-            </ul>
-        </section>
-    </main>
-
-   
-    
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
 </body>
-<footer>
-    <p>ONLINE ORDERING SERVICES</p>
-</footer>
+</html>
+
 </html>
 
 
